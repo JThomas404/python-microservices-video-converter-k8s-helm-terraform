@@ -12,3 +12,17 @@ variable "tags" {
     Environment  = "dev"
   }
 }
+
+variable "mongodb_password" {
+  description = "MongoDB root password"
+  type        = string
+  sensitive   = true
+}
+
+variable "postgresql_password" {
+  description = "PostgreSQL root password"
+  type        = string
+  sensitive   = true
+}
+
+
